@@ -6,7 +6,7 @@ NOTE: This is a Chrome extension.
 
 ## Description
 
-**Localhost Auto-Reloader** is designed to streamline web development by automatically reloading tabs that are running on `localhost` or `127.0.0.1` when they gain focus. This eliminates the need to manually refresh your browser after making changes to your code, allowing for an easier development flow.
+**Localhost Auto-Reloader** is designed to streamline web development by automatically reloading tabs that are running on `localhost` or `127.0.0.1` when they gain focus. This eliminates the need to manually refresh your browser after making changes to your code, allowing for an easier development workflow.
 
 ## Features
 
@@ -18,7 +18,7 @@ NOTE: This is a Chrome extension.
 
 ## Installation
 
-Since this extension is still in Beta, you need to manually install it in Chrome.
+Since this extension is still in Beta, you need to manually install it in Chrome by following the below steps:
 
 1. Download this repository and extract the files to a folder
 2. Open Chrome and navigate to **chrome://extensions/**
