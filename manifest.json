@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "name": "Localhost Auto-Reloader",
+    "version": "1.2",
+    "description": "Automatically reloads your localhost tab in Chrome when you switch focus to it",
+    "permissions": ["storage", "tabs"],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "action": {
+      "default_icon": {
+        "16": "icons/icon-disabled-16.png",
+        "32": "icons/icon-disabled-32.png",
+        "48": "icons/icon-disabled-48.png",
+        "128": "icons/icon-disabled-128.png"
+      },
+      "default_title": "Localhost Auto-Reloader"
+    },
+    "commands": {
+      "toggle-reloading": {
+        "suggested_key": {
+          "default": "Ctrl+Shift+R",
+          "mac": "Command+Shift+R"
+        },
+        "description": "Toggle Localhost Auto-Reloader"
+      }
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "http://localhost/*",
+          "https://localhost/*",
+          "http://127.0.0.1/*",
+          "https://127.0.0.1/*"
+        ],
+        "js": ["content.js"]
+      }
+    ]
+  }
+  
